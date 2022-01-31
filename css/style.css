@@ -1,0 +1,214 @@
+/* &display=swap - добавить в конце строки при использовании плагина Google Fonts 
+&subset=cyrillic-ext - добавить (без пробела) к выше указанному для работы кириллического начертания*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap);
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+	background: #F5F5F5;
+}
+
+html {
+	font-size: 16px; /* по умолчанию */
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+
+/* our-promise-section */
+
+.our-promise {
+	padding: 110px 0px 122px 0px;
+}
+.our-promise__conteiner {
+}
+.container {
+	max-width: 1020px;
+}
+.container_margin {
+	margin: 0px auto;
+}
+.our-promise__title-block {
+	margin: 0px 0px 68px 0px;
+}
+.title-block__name {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	padding: 0px 0px 0px 32px;
+	position: relative;
+	margin: 0px 0px 33px 0px;
+}
+.title-block__name::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url('../img/logo_reg.svg') 0 0 no-repeat;
+
+}
+.title-block__slogan {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+}
+.promises-list {
+	display: flex;
+	justify-content: space-between;	
+	
+}
+.promises-list__item:not(:last-child) {
+	margin: 0px 20px 0px 0px;
+}
+.promise-card {
+	max-width: 324px;
+	display: flex;
+}
+.promise-card__img {
+	margin: 0px 23px 0px 0px;
+}
+.promise-card__text-block {
+}
+.promise-card__title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #F2726F;
+	margin: 0px 0px 20px 0px;
+}
+.promise-card__description {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+
+/* our-impact-section */
+
+.our-impact {
+	background: url('../img/our-impact/Blob-2.png') 79% 0 no-repeat, #29C3BE;
+	padding: 112px 0px 134px 0px;
+}
+.our-impact__container {
+}
+.container {
+}
+.our-impact__content-blok {
+	display: flex;
+	justify-content: space-between;
+}
+.our-impact__title-block {
+	max-width: 411px;
+	margin: 0px 0px 79px 0px;
+}
+.title-block__name_white {
+	color: #FFFFFF;
+}
+.title-block__name_white::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url('../img/logo_white.svg') 0 0 no-repeat;
+}
+.title-block__slogan_white {
+	color: #FFFFFF;
+}
+.our-impact__image-block {
+	max-width: 498px;
+	border-radius: 40px;
+	margin: -192px 0px 0px 0px;
+}
+.image-block__img {
+}
+.impacts-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.impacts-list__item:not(:last-child) {
+	margin: 0px 20px 0px 0px;
+}
+.impact-card {
+	display: flex;
+	
+}
+.impact-card__img {
+	margin: 0px 12px 0px 0px;
+}
+.impact-card__text-block {
+}
+.achievements {
+}
+.achievements__count {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+}
+.achievements__title {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #5D62B5;
+	text-transform: lowercase;
+}
